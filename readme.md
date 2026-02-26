@@ -16,6 +16,7 @@ A curated list of tools, libraries, and resources for using LLMs with Clojure.
 
 ## MCP Servers
 
+- [mcp-clojure-sdk](https://github.com/unravel-team/mcp-clojure-sdk) - A Clojure SDK for creating Model Context Protocol servers. Provides tools, resources, and prompts registration with STDIO transport via core.async. Includes example servers for calculators, Vega-lite charts, and code analysis.
 - [clojure-mcp](https://github.com/bhauman/clojure-mcp) - A full-featured MCP server that connects LLM clients (Claude Code, Claude Desktop, etc.) to your Clojure project. Provides REPL integration, Clojure-aware structural editing (via parinfer, cljfmt, clj-rewrite), dispatch agents, and project summary management. Works with both CLI assistants and desktop chat apps.
 
 ## Editor Integrations
@@ -25,6 +26,9 @@ A curated list of tools, libraries, and resources for using LLMs with Clojure.
 ## Libraries
 
 - [Agent-o-rama](https://github.com/redplanetlabs/agent-o-rama) - An end-to-end LLM agent platform for building, tracing, testing, and monitoring agents with integrated storage and one-click deployment. Provides first-class Java and Clojure APIs, a web UI for traces and experiments, datasets and evaluators, streaming, human-in-the-loop input, time-series telemetry, and online evaluation. Built on Rama.
+- [Matryoshka](https://github.com/yogthos/Matryoshka) - Process documents 100x larger than your LLM's context window without vector databases or chunking. Uses a constrained symbolic DSL (Nucleus) where the LLM outputs S-expression commands executed by a logic engine, achieving 97%+ token savings via handle-based storage. Includes an MCP server, REPL, and tree-sitter symbol extraction.
+- [Mycelium](https://github.com/yogthos/mycelium) - Schema-enforced, composable workflow components for Clojure designed for LLM agent orchestration. Structures applications as directed graphs of pure data transformations with Malli-validated inputs/outputs. Each cell has a fixed scope so agents never need to see the rest of the application. Includes compile-time validation, hierarchical composition, tracing, and agent brief generation.
+- [instructor-clj](https://github.com/unravel-team/instructor-clj) - A Clojure library inspired by [instructor](https://github.com/jxnl/instructor) for getting structured output from LLMs. Define response schemas with Malli, get validated and parsed data back. Supports OpenAI, Anthropic, Gemini, Mistral, Ollama, and OpenRouter via litellm-clj, with automatic retries.
 - [DSCloj](https://github.com/unravel-team/DSCloj) - A Clojure library inspired by DSPy for declarative LLM pipeline programming. Define modules with Malli-validated typed inputs/outputs, switch between providers (OpenAI, Anthropic, Gemini, Ollama, etc.) via litellm-clj, and stream structured output with progressive parsing over core.async channels.
 - [Bosquet](https://github.com/zmedelis/bosquet) - LLMOps library for building LLM-based applications in Clojure. Provides prompt templating (via Selmer), prompt chaining and composition (via Pathom graph processing), agent and tool abstractions, LLM memory handling, and response caching. Supports OpenAI, Ollama, and tool calling.
 
