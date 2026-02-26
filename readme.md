@@ -17,11 +17,15 @@ A curated list of tools, libraries, and resources for using LLMs with Clojure.
 
 ## MCP Servers
 
+- [Gaiwan MCP SDK](https://github.com/GaiwanTeam/mcp-sdk) - A pure Clojure SDK for building MCP servers with full protocol support (2025-06-18). Supports tools, prompts, resources, and resource templates over both STDIO and HTTP transports. Includes capability negotiation and client notification.
+- [MCP Toolkit](https://github.com/metosin/mcp-toolkit) - A Clojure/ClojureScript MCP SDK from Metosin with APIs for both clients and servers. I/O agnostic with Promesa-based async support. Implements tools, prompts, resources, sampling, completion, logging, and more. Includes examples for STDIO and HTTP/SSE transports.
+- [PluMCP](https://github.com/plumce/plumcp) - A low-dependency Clojure/ClojureScript library for building MCP clients and servers. Supports nearly all non-deprecated MCP features and transports including OAuth 2.1 with Streamable HTTP. Works across JVM and Node.js runtimes.
 - [mcp-clojure-sdk](https://github.com/unravel-team/mcp-clojure-sdk) - A Clojure SDK for creating Model Context Protocol servers. Provides tools, resources, and prompts registration with STDIO transport via core.async. Includes example servers for calculators, Vega-lite charts, and code analysis.
 - [clojure-mcp](https://github.com/bhauman/clojure-mcp) - A full-featured MCP server that connects LLM clients (Claude Code, Claude Desktop, etc.) to your Clojure project. Provides REPL integration, Clojure-aware structural editing (via parinfer, cljfmt, clj-rewrite), dispatch agents, and project summary management. Works with both CLI assistants and desktop chat apps.
 
 ## Editor Integrations
 
+- [Calva Backseat Driver](https://github.com/BetterThanTomorrow/calva-backseat-driver) - A VS Code extension that gives AI assistants (CoPilot, Cursor, Windsurf, Claude Desktop) access to the Clojure REPL via Calva. Provides tools for code evaluation, structural editing with bracket balancing (via Parinfer), symbol lookup, and clojuredocs.org integration. Also works as an MCP server.
 - [ECA (Editor Code Assistant)](https://github.com/editor-code-assistant/eca) - An editor-agnostic AI code assistant server written in Clojure, inspired by the LSP protocol. Supports chat, rewrite, and completion features with agents/subagents, MCP resources, and OpenTelemetry. Works with Emacs, VS Code, Vim, and IntelliJ. Supports OpenAI, Anthropic, Copilot, Ollama, and more.
 
 ## Libraries
