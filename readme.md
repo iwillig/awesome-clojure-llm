@@ -50,7 +50,7 @@ A curated list of tools, libraries, and resources for using LLMs with Clojure.
 ## Prompts & Agents
 
 - [clojure-system-prompt](https://github.com/iwillig/clojure-system-prompt) - A system prompt for LLM coding assistants optimized for REPL-driven Clojure development. Enforces idiomatic functional patterns, anti-hallucination rules, and REPL-first workflows. Works with pi, opencode, Claude Code skills, and more. Includes prompt compression via LLMLingua.
-- [nucleus-clojure](https://lobehub.com/skills/michaelwhitford-nucleus-nucleus-clojure) - A Clojure-specific AI prompt for LobeHub based on the [Nucleus](https://github.com/michaelwhitford/nucleus) mathematical prompting framework. Designed for use with Clojure REPL tools, it uses symbolic equations to guide AI behavior for REPL-driven development workflows.
+- [Nucleus](https://github.com/michaelwhitford/nucleus) - A mathematical framework for prompting AI models through symbolic equations. Replaces verbose natural language instructions with compressed mathematical symbols and S-expressions. Includes a Clojure REPL mode (`Human ⊗ AI ⊗ REPL`) and context-switching profiles for different workflows.
 
 ## Open Weight Models
 
