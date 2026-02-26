@@ -12,6 +12,7 @@ A curated list of tools, libraries, and resources for using LLMs with Clojure.
 - [CLI Tools](#cli-tools)
 - [Open LLM Harnesses](#open-llm-harnesses)
 - [Prompts & Agents](#prompts--agents)
+- [Open Weight Models](#open-weight-models)
 - [Community](#community)
 
 ## MCP Servers
@@ -46,6 +47,14 @@ A curated list of tools, libraries, and resources for using LLMs with Clojure.
 
 - [clojure-system-prompt](https://github.com/iwillig/clojure-system-prompt) - A system prompt for LLM coding assistants optimized for REPL-driven Clojure development. Enforces idiomatic functional patterns, anti-hallucination rules, and REPL-first workflows. Works with pi, opencode, Claude Code skills, and more. Includes prompt compression via LLMLingua.
 - [nucleus-clojure](https://lobehub.com/skills/michaelwhitford-nucleus-nucleus-clojure) - A Clojure-specific AI prompt for LobeHub based on the [Nucleus](https://github.com/michaelwhitford/nucleus) mathematical prompting framework. Designed for use with Clojure REPL tools, it uses symbolic equations to guide AI behavior for REPL-driven development workflows.
+
+## Open Weight Models
+
+Open weight models that work well for Clojure code generation and assistance.
+
+- [Kimi K2.5](https://huggingface.co/moonshotai/Kimi-K2.5) - A large Mixture-of-Experts model from Moonshot AI with strong coding capabilities. Performs well on Clojure tasks including REPL-driven development and functional programming patterns.
+- [MiniMax-M2.1](https://huggingface.co/MiniMaxAI/MiniMax-M2.1) - A large Mixture-of-Experts model from MiniMax with strong coding and reasoning capabilities. Performs well on Clojure code generation and functional programming tasks.
+- [Qwen3-Coder-Next](https://huggingface.co/Qwen/Qwen3-Coder-Next) - A code-specialized model from Alibaba's Qwen team optimized for code generation, understanding, and agentic coding tasks. Performs well on Clojure development with good support for functional programming idioms.
 
 ## Community
 
