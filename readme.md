@@ -10,6 +10,7 @@ A curated list of tools, libraries, and resources for using LLMs with Clojure.
 - [Editor Integrations](#editor-integrations)
 - [Libraries](#libraries)
 - [CLI Tools](#cli-tools)
+- [Open LLM Harnesses](#open-llm-harnesses)
 - [Prompts & Agents](#prompts--agents)
 - [Community](#community)
 
@@ -23,6 +24,8 @@ A curated list of tools, libraries, and resources for using LLMs with Clojure.
 
 ## Libraries
 
+- [Agent-o-rama](https://github.com/redplanetlabs/agent-o-rama) - An end-to-end LLM agent platform for building, tracing, testing, and monitoring agents with integrated storage and one-click deployment. Provides first-class Java and Clojure APIs, a web UI for traces and experiments, datasets and evaluators, streaming, human-in-the-loop input, time-series telemetry, and online evaluation. Built on Rama.
+- [DSCloj](https://github.com/unravel-team/DSCloj) - A Clojure library inspired by DSPy for declarative LLM pipeline programming. Define modules with Malli-validated typed inputs/outputs, switch between providers (OpenAI, Anthropic, Gemini, Ollama, etc.) via litellm-clj, and stream structured output with progressive parsing over core.async channels.
 - [Bosquet](https://github.com/zmedelis/bosquet) - LLMOps library for building LLM-based applications in Clojure. Provides prompt templating (via Selmer), prompt chaining and composition (via Pathom graph processing), agent and tool abstractions, LLM memory handling, and response caching. Supports OpenAI, Ollama, and tool calling.
 
 ## CLI Tools
@@ -30,8 +33,14 @@ A curated list of tools, libraries, and resources for using LLMs with Clojure.
 - [clojure-mcp-light](https://github.com/bhauman/clojure-mcp-light) - Simple CLI tools for LLM coding assistants working with Clojure. Includes `clj-nrepl-eval` for REPL evaluation from the command line, `clj-paren-repair-claude-hook` for automatic delimiter fixing via Claude Code hooks, and `clj-paren-repair` for on-demand parenthesis repair with any LLM that has shell access.
 - [ai-investigator](https://github.com/bhauman/ai-investigator) - A Babashka CLI tool that runs Claude, Gemini, and Codex in parallel to investigate problems, then synthesizes their findings with a Claude evaluator. Produces a primary path, backup path, and step-by-step implementation plan.
 
+## Open LLM Harnesses
+
+- [opencode](https://opencode.ai/) - An open source coding agent TUI. Supports custom agents, instructions files, and MCP integrations. Works well with Clojure projects via system prompts and clojure-mcp. ([GitHub](https://github.com/anomalyco/opencode))
+- [pi](https://github.com/badlogic/pi-mono) - A monorepo of tools for building AI agents and managing LLM deployments. Includes a unified multi-provider LLM API, agent runtime with tool calling, an interactive coding agent CLI, a terminal UI library, and a CLI for managing vLLM deployments on GPU pods.
+
 ## Prompts & Agents
 
+- [clojure-system-prompt](https://github.com/iwillig/clojure-system-prompt) - A system prompt for LLM coding assistants optimized for REPL-driven Clojure development. Enforces idiomatic functional patterns, anti-hallucination rules, and REPL-first workflows. Works with pi, opencode, Claude Code skills, and more. Includes prompt compression via LLMLingua.
 - [nucleus-clojure](https://lobehub.com/skills/michaelwhitford-nucleus-nucleus-clojure) - A Clojure-specific AI prompt for LobeHub based on the [Nucleus](https://github.com/michaelwhitford/nucleus) mathematical prompting framework. Designed for use with Clojure REPL tools, it uses symbolic equations to guide AI behavior for REPL-driven development workflows.
 
 ## Community
