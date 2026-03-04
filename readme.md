@@ -41,6 +41,7 @@ A curated list of tools, libraries, and resources for using LLMs with Clojure.
 
 - [clojure-mcp-light](https://github.com/bhauman/clojure-mcp-light) - Simple CLI tools for LLM coding assistants working with Clojure. Includes `clj-nrepl-eval` for REPL evaluation from the command line, `clj-paren-repair-claude-hook` for automatic delimiter fixing via Claude Code hooks, and `clj-paren-repair` for on-demand parenthesis repair with any LLM that has shell access.
 - [ai-investigator](https://github.com/bhauman/ai-investigator) - A Babashka CLI tool that runs Claude, Gemini, and Codex in parallel to investigate problems, then synthesizes their findings with a Claude evaluator. Produces a primary path, backup path, and step-by-step implementation plan.
+- [brepl](https://github.com/licht1stein/brepl) - Enables AI-assisted Clojure development by solving the notorious parenthesis problem. It fully supports Claude Code and ECA (Editor Code Assistant) through their hook systems, providing three essential capabilities: Automatic bracket fixing; Simple REPL evaluation; Live file synchronization.
 
 ## Open LLM Harnesses
 
